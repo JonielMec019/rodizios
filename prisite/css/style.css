@@ -85,6 +85,9 @@ header #logo {
   bottom: 20px;
   padding: 20px;
 }
+#register h1 {
+  text-align: center;
+}
 
 #register p {
   font-size: 1.5em;
