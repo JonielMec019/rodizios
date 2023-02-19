@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header .title {
+  text-align: center;
+}
+header figure .title1 {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  min-height: 500px;
+  background-image: url("../img/FundoBlog.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+header h1 {
+  color: aliceblue;
+}
