@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaquinha Centro Social Romília Maria</title>
+    <link rel="stylesheet" href="../contatos/contatos.css" />
+
+    <!-- existem diversas formas de aplicar o css no html, como segue:
+    1. Universal, use o formato: *{...}
+    2. Por tipo, use body{...}
+    3. por seletor por classe, use .bg-back{...} esse n entendi direito wtf
+    4. por atributo, seletor de filtro, use [type="atributo"]{...}
+    5. seletor pseudos, use :hover{..}
+    6. seletor por ID, sendo o ID um valor único, use #-conteudo{...}-->
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="https://www.romiliamaria.org.br/" target="_blank"> Tech 5</a>
+      </h1>
+    </header>
+
+    <section class="content-center">
+      <div class="text-center">
+        <a href="https://www.romiliamaria.org.br/" target="_blank"
+          ><img src="assets/image/TECH5.png" alt="Logo da Hcode"
+        /></a>
+      </div>
+      <form action="/login" method="POST" id="form-login">
+        <div>
+          <input
+            type="email"
+            id="email"
+            placeholder="Digite o seu e-mail"
+            required
+          />
+        </div>
+        <div>
+          <input
+            type="password"
+            id="password"
+            placeholder="Digite a senha"
+            required
+          />
+        </div>
+        <div>
+          <input
+            type="date"
+            id="date"
+            placeholder="Digite seu nascimento"
+            required
+          />
+        </div>
+        <div>
+          <select id="estado" name="estado" required>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP" selected>São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+            <option value="EX">Estrangeiro</option>
+          </select>
+        </div>
+        <div>
+          <select name=" valor" id="valor" required>
+            <option value="5">R$ 5,00</option>
+            <option value="10">R$ 10,00</option>
+            <option value="15">R$ 15,00</option>
+            <option value="20">R$ 20,00</option>
+            <option value="30">R$ 30,00</option>
+            <option value="50">R$ 50,00</option>
+            <option value="100">R$ 100,00</option>
+            <option value="200">R$ 200,00</option>
+            <option value="500">R$ 500,00</option>
+            <option value="outro">Outro Valor</option>
+          </select>
+        </div>
+
+        <div>
+          <input
+            type="text"
+            id=""
+            placeholder="Caso tenha colocado outro valor, digite o valor."
+          />
+        </div>
+        <div>
+          <input type="file" id="file" placeholder="comprovante" required />
+        </div>
+        <div>
+          <button id="btn-submit">Enviar</button>
+        </div>
+      </form>
+      <!-- action é para onde deve ser enviado 
+        dados do formulario uma vez que o usuário o preencheu, pode ser o endereço de um link por exemplo
+    method é a forma como os dados são enviados, get(moto) envia os dados do formulario pela url, post(caminhao) cabe mais dados-->
+    </section>
+
+    <footer>
+      <p>Todos os direitos reservados</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

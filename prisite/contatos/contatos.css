@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+} /* here was applied the style border-box in all html; that is, ele diz que as dimensões 
+das bordas("caixa") permanecem as mesmas independente das alterações particulares das bordas */
+
+body {
+  background-color: #abd1dd;
+} /* foi aplicado a cor de de fundo em todo corpo do arquivo */
+
+.content-center {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgb(229, 244, 198);
+  border-radius: 5%;
+} /* aqui foi aplicada o CSS na classe content-center, que no caso particular representa uma seção. A clase pode se repetir*/
+
+.content-center .text-center {
+  text-align: center;
+} /*  aplicação do CSS na classe text-center, perceba que primeiro foi colocado a clase mãe e depois a filha */
+
+.content-center img {
+  width: 70%;
+} /* Idem */
+
+.content-center form {
+  margin: 20px;
+} /* Idem */
+
+/*INPUT----------------------------------------------------------------------------------------------------------------------*/
+.content-center input {
+  width: 100%;
+  padding: 10px 5px;
+} /* Idem */
+
+.content-center input {
+  border-color: none;
+  border-bottom-color: rgb(250, 235, 215);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  margin-bottom: 10px;
+}
+
+.content-center input:hover {
+  background-color: rgb(255, 235, 235);
+} /* O hover serve para dar uma cor de fundo, flutuação,  no momento em que o elemento é selecionado*/
+
+.content-center input:focus {
+  border-bottom-color: #d07335;
+} /* ele foca no elemento, feedback visual, mas aparentemente esse comando não esta respondendo*/
+
+/*BUTTON----------------------------------------------------------------------------------------------------------------------*/
+
+.content-center button {
+  width: 100%;
+  padding: 10px 5px;
+  outline-color: rgb(241, 129, 50);
+} /* Idem */
+
+.content-center button {
+  background-color: #d07335;
+  color: #fff;
+}
+
+.content-center button:hover {
+  background-color: #b55b28;
+  cursor: pointer;
+} /* O hover serve para dar uma cor de fundo, flutuação,  no momento em que o elemento é selecionado*/
+
+.content-center button:active {
+  background-color: #c14e0e;
+  cursor: pointer;
+}
+
+.content-center select {
+  border-color: none;
+  border-bottom-color: rgb(250, 235, 215);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px 5px;
+}
+
+/* HEADER-------------------------------------------------------------------------------------------------------------*/
+header a {
+  color: #666;
+  text-decoration: none;
+}
+
+header a:visited {
+  color: rgb(0, 0, 0);
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+header a:focus {
+  color: rgb(255, 234, 234);
+}
+
+header a:active {
+  color: rgb(239, 239, 223);
+}
+header h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 50px auto;
+}
+
+/*FOOTER-------------------------------------------------------------------------------------------*/
+footer {
+  font-size: 0.8em;
+  text-align: center;
+}
